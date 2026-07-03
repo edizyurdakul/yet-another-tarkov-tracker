@@ -1,0 +1,28 @@
+{
+  "formatter": {
+    "external": {
+      "command": "bunx",
+      "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+    }
+  },
+  "format_on_save": "on",
+  "languages": {
+    "TypeScript": {
+      "format_on_save": "on",
+      "formatter": "language_server"
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": "language_server"
+    }
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "codeActionsOnSave": {
+          "rules": ["*"]
+        }
+      }
+    }
+  }
+}
