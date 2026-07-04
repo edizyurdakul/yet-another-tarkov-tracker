@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/sonner";
 
 import "./globals.css";
 
@@ -56,6 +57,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} bg-background h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
+        <Toaster />
         <SidebarProvider>
           <AppSidebar />
           <SidebarInset>{children}</SidebarInset>
